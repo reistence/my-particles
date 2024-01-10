@@ -138,6 +138,8 @@ void main() {
 	// randomise
 	displaced.xy += vec2(random(pindex) - 0.5, random(offset.x + pindex) - 0.5) * uRandom;
 	float rndz = (random(pindex) + snoise_1_2(vec2(pindex * 0.1, uTime * 0.1)));
+  // float rndz = (random(pindex) + snoise_1_2(vec2(pindex * 0.1, uTime * 0.1)));
+
 	displaced.z += rndz * (random(pindex) * 2.0 * uDepth);
 	// center
 	displaced.xy -= uTextureSize * 0.5;
@@ -151,7 +153,8 @@ void main() {
 	// particle size
 	float psize = (snoise_1_2(vec2(uTime, pindex) * 0.5) + 2.0);
 	psize *= max(grey, 0.2);
-	psize *= uSize;
+	// psize *= uSize ;
+  psize *= 5.5;
 
 	// final position
 	vec4 mvPosition = modelViewMatrix * vec4(displaced, 1.0);
