@@ -1,0 +1,1 @@
+Interactive Particles movement in Three.js inspired by Bruno Imbrizi: [Twitter](https://twitter.com/brunoimbrizi/), [Codepen](https://codepen.io/brunoimbrizi/), [GitHub](https://github.com/brunoimbrizi)
