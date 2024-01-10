@@ -6,6 +6,7 @@ import InteractiveControls from './controls/InteractiveControls';
 import Particles from './particles/Particles';
 
 // const glslify = require('glslify');
+import { TweenLite } from 'gsap/gsap-core';
 
 export default class WebGLView {
   constructor(app) {

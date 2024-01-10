@@ -21,7 +21,7 @@ export default class Particles {
       this.texture = texture;
       this.texture.minFilter = THREE.LinearFilter;
       this.texture.magFilter = THREE.LinearFilter;
-      this.texture.format = THREE.RGBFormat;
+      this.texture.format = THREE.RGBAFormat;
 
       this.width = texture.image.width;
       this.height = texture.image.height;
@@ -82,8 +82,8 @@ export default class Particles {
       vertexShader: vertex,
       fragmentShader: fragment,
       depthTest: false,
-      transparent: true
-      // blending: THREE.AdditiveBlending
+      transparent: true,
+      blending: THREE.AdditiveBlending
     });
 
     const geometry = new THREE.InstancedBufferGeometry();
