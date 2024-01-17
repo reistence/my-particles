@@ -156,7 +156,7 @@ void main() {
 	float psize = (snoise(vec2(uTime, pindex) * 0.5) + 2.0);
 	psize *= max(grey, 0.2);
 	psize *= uSize ;
-  // psize *= 5.5;
+  // psize *= 1.3;
 
 	// final position
 	vec4 mvPosition = modelViewMatrix * vec4(displaced, 1.0);

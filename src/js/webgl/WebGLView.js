@@ -13,11 +13,16 @@ export default class WebGLView {
     this.app = app;
 
     this.samples = [
-      'images/sample-01.png',
-      'images/sample-02.png',
-      'images/sample-03.png',
-      'images/sample-04.png',
+      'images/bg20.jpg',
+      'images/bg50.jpg',
+      'images/bg.jpg',
+      'images/bg20.jpg',
+      'images/bgdio.jpg',
       'images/sample-05.png'
+      // 'images/sample-02.png',
+      // 'images/sample-03.png',
+      // 'images/sample-04.png',
+      // 'images/sample-05.png'
     ];
 
     this.initThree();

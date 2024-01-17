@@ -17,6 +17,7 @@ void main() {
 
 	// greyscale
 	float grey = colA.r * 0.21 + colA.g * 0.71 + colA.b * 0.07;
+	
 	float grey1 = 1.0;
 
 	vec4 colB = vec4(grey ,grey  , grey , 1.0);
@@ -28,7 +29,7 @@ void main() {
 	float t = smoothstep(0.0, border, dist);
 
 	// final color
-	color = colB;
+	color = colA;
 	color.a = t;
 
 	gl_FragColor = color;

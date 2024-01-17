@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import '../css/global.css';
 import '../scss/global.scss';
 import App from './App';
