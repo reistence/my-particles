@@ -18,11 +18,6 @@
     "sourceType": "module"
   },
   "plugins": [
-    "prettier",
-    "import",
-    "simple-import-sort",
-    "promise",
-    "sonarjs"
     // "unicorn"
   ],
   "settings": {
@@ -72,4 +67,3 @@
     // end simple-import-sort
   }
 }
-
